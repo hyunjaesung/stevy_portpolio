@@ -1,17 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import TitleContainer from "./TitleContainer";
 
 interface Props {
   titles: String[];
   subMenu: String[];
-  components: React.ElementType[];
+  components: React.ReactElement[];
 }
 
-const Layout = ({ titles, subMenu }: Props) => {
+const Layout = ({ titles, subMenu, components }: Props) => {
+  const [curIdx, setCurIdx] = useState(0);
+  const handleClickButton = (index: number) => {
+    setCurIdx(index);
+  };
   return (
-    <div className='flex w-full mt-18 h-screen80'>
-      <TitleContainer titles={titles} subMenu={subMenu} />
-      <div>anycomponent</div>
+    <div className='flex w-full h-screen80 p-20'>
+      <TitleContainer
+        titles={titles}
+        subMenu={subMenu}
+        curIdx={curIdx}
+        handleClickButton={handleClickButton}
+      />
+      <div>{components[0]}</div>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AboutMe from "./components/AboutMe";
 import Footer from "./components/Footer";
 import Navigator from "./components/Navigator";
@@ -7,7 +7,7 @@ import Navigator from "./components/Navigator";
 function App() {
   return (
     <div className='App w-screen flex justify-center source-sans subpixel-antialiased black'>
-      <div className='max-w-screen-2xl w-screen'>
+      <div className='flex flex-col w-screen max-w-screen-2xl'>
         <Router>
           <Navigator />
           <Switch>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navigator = () => {
   return (
-    <nav className='m-16  flex justify-between items-center font-semibold'>
+    <nav className='w-full m-16 mr-8 ml-8  flex justify-between items-center font-semibold'>
       <div>
         <Link to='/'>
           <span className='dancing text-5xl'>stevysung</span>
