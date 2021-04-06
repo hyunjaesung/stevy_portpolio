@@ -14,15 +14,15 @@ const TitleContainer = ({
   handleClickButton,
 }: Props) => {
   return (
-    <div className='mt-percent20 w-3/12'>
-      <div className='flex flex-col '>
+    <section className='mt-percent20 w-3/12'>
+      <section className='flex flex-col '>
         {titles.map((title, index) => (
           <span key={index} className='w-full font-bold text-8xl text-right'>
             {title}
           </span>
         ))}
-      </div>
-      <div className='flex flex-col mt-20'>
+      </section>
+      <section className='flex flex-col mt-20'>
         {subMenu.map((menu, index) => (
           <button
             key={index}
@@ -35,8 +35,8 @@ const TitleContainer = ({
             {menu}
           </button>
         ))}
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 

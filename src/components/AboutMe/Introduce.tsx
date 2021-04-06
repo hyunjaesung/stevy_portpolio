@@ -4,7 +4,7 @@ interface Props {}
 
 const Introduce = (props: Props) => {
   return (
-    <section className='h-full ml-28 mt-20'>
+    <>
       <div
         className='w-full h-1/2 bg-no-repeat bg-center bg-cover mb-10 rounded-lg'
         style={{
@@ -28,7 +28,7 @@ const Introduce = (props: Props) => {
           delectus incidunt. Obcaecati sequi quos porro quibusdam assumenda r
         </p>
       </div>
-    </section>
+    </>
   );
 };
 

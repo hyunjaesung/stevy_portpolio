@@ -20,7 +20,9 @@ const Layout = ({ titles, subMenu, components }: Props) => {
         curIdx={curIdx}
         handleClickButton={handleClickButton}
       />
-      <div>{components[0]}</div>
+      <div>
+        <section className='h-full ml-28 mt-20'>{components[0]}</section>
+      </div>
     </div>
   );
 };
