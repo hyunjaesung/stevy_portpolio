@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AboutMe from "./components/AboutMe";
 import Footer from "./components/Footer";
 import Navigator from "./components/Navigator";
+import Work from "./components/Work";
+import Works from "./components/Works";
 
 function App() {
   return (
@@ -15,7 +17,10 @@ function App() {
               home
             </Route>
             <Route path='/works' exact>
-              works
+              <Works />
+            </Route>
+            <Route path='/works/:id' exact>
+              <Work />
             </Route>
             <Route path='/aboutme' exact>
               <AboutMe />

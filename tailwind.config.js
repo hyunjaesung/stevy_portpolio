@@ -18,6 +18,9 @@ module.exports = {
       height: {
         screen80: "80vh",
       },
+      width: {
+        screen50: "50vw",
+      },
       margin: {
         percent20: "20%",
         percent40: "40%",

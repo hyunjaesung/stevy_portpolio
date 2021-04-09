@@ -1,14 +1,17 @@
 import React from "react";
-import introduceImage from "../../image/mountains.jpg";
-interface Props {}
+import worksData from "../worksData";
 
-const Introduce = (props: Props) => {
+interface Props {
+  data: typeof worksData[0];
+}
+
+const WorkItem = ({ data: { image } }: Props) => {
   return (
     <>
       <div
-        className={`slide-in-blurred-top-gray w-full h-1/2 bg-no-repeat bg-center bg-cover mb-10 rounded-lg filter grayscale`}
+        className='slide-in-blurred-top w-full h-1/2 bg-no-repeat bg-center bg-cover mb-10 rounded-lg'
         style={{
-          backgroundImage: `url("${introduceImage}")`,
+          backgroundImage: `url("${image}")`,
         }}></div>
       <div className='slide-in-blurred-top'>
         <p className='text-xl'>
@@ -32,4 +35,4 @@ const Introduce = (props: Props) => {
   );
 };
 
-export default Introduce;
+export default WorkItem;
