@@ -1,15 +1,15 @@
 import React from "react";
-import tmonImage from "../../image/mountains.jpg";
+import tmonImage from "../../image/tmon.png";
 
 const skills = [
   { tech: "HTML", score: 10 },
   { tech: "CSS", score: 8 },
   { tech: "Javascript", score: 10 },
-  { tech: "Typescript", score: 4 },
-  { tech: "React", score: 4 },
-  { tech: "NodeJS", score: 4 },
-  { tech: "NextJS", score: 4 },
-  { tech: "Jest", score: 4 },
+  { tech: "Typescript", score: 8 },
+  { tech: "React", score: 10 },
+  { tech: "NodeJS", score: 6 },
+  { tech: "NextJS", score: 6 },
+  { tech: "Jest", score: 6 },
 ];
 const experiences = [
   {
@@ -22,7 +22,7 @@ const experiences = [
 
 const Skill = () => {
   return (
-    <div className='slide-in-blurred-top flex justify-around w-full items-start mb-14'>
+    <div className='slide-in-blurred-top flex justify-around w-full items-start mb-36'>
       <section className='w-1/2 p-5'>
         <h1 className='text-5xl font-bold'>skills</h1>
         <div className='mt-3 mb-5 w-1/2 border-black h-1 bg-black opacity-80'></div>
@@ -48,7 +48,7 @@ const Skill = () => {
               className='shadow-drop-br rounded-lg mt-6 w-full h-32 flex items-center'
               key={name}>
               <div
-                className='mr-5 h-full bg-no-repeat bg-center bg-cover rounded-lg filter grayscale w-1/5'
+                className='mr-5 h-full bg-no-repeat bg-center bg-contain rounded-lg filter grayscale w-1/5'
                 style={{
                   backgroundImage: `url("${image}")`,
                 }}></div>

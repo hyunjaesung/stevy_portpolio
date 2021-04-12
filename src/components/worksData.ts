@@ -1,29 +1,15 @@
-import cardImage1 from "../../src/image/mountains.jpg";
+import tmonImage from "../../src/image/tmonlogo.png";
+import tmony from "../../src/image/tmony.png";
 
 const worksData = [
   {
-    image: cardImage1,
-    color: "bg-blue-800",
-    title: ["포폴 사이트", "만들기"],
-    subTitle: "portpolio site",
-  },
-  {
-    image: cardImage1,
-    color: "bg-yellow-800",
-    title: ["포폴 사이트 만들기2"],
-    subTitle: "portpolio site",
-  },
-  {
-    image: cardImage1,
-    color: "bg-gray-800",
-    title: ["포폴 사이트 만들기3"],
-    subTitle: "portpolio site",
-  },
-  {
-    image: cardImage1,
-    color: "bg-purple-800",
-    title: ["포폴 사이트 만들기4"],
-    subTitle: "portpolio site",
+    thumbnail: tmonImage,
+    image: tmony,
+    color: "bg-yellow-900",
+    title: ["TMON", "검색 페이지 필터 개선"],
+    subTitle: "@TMON",
+    componentType: "Simple",
+    content: " hihi",
   },
 ];
 

@@ -1,13 +1,13 @@
 import React from "react";
 
 interface Props {
-  image: string;
+  thumbnail: string;
   color: string;
   title: string[];
   subTitle: string;
 }
 
-const Card = ({ image, color, title, subTitle }: Props) => {
+const Card = ({ thumbnail, color, title, subTitle }: Props) => {
   return (
     <div className=' cursor-pointer card overflow-hidden w-96 m-10 h-44 relative bg-white'>
       <p
@@ -19,13 +19,15 @@ const Card = ({ image, color, title, subTitle }: Props) => {
         {subTitle}
       </p>
 
-      <div
-        className='pic flex flex-col z-50 relative justify-between bg-no-repeat bg-center bg-cover w-3/4 h-full filter grayscale'
-        style={{
-          backgroundImage: `url("${image}")`,
-        }}>
-        <div></div>
-        <div className='relative text-2xl z-50 font-bold text-white text-right mb-2 mr-4'>
+      <div className='w-3/4 h-full relative'>
+        <div
+          className={`pic z-50 relative justify-between opacity-80 ${color} bg-no-repeat bg-center bg-cover w-full h-full filter grayscale`}
+          style={
+            {
+              // backgroundImage: `url("${thumbnail}")`,
+            }
+          }></div>
+        <div className='absolute bottom-0 right-0 text-2xl z-50 font-bold text-white text-right mb-2 mr-4'>
           {title.map((item) => (
             <div key={item}>{item}</div>
           ))}

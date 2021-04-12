@@ -37,8 +37,8 @@ const Layout = ({ titles, titleSize = "", subMenu, components }: Props) => {
         curIdx={curIdx}
         handleClickButton={handleClickButton}
       />
-      <div className='w-full pr-20 overflow-hidden'>
-        <section className='flex flex-col justify-center items-center h-full ml-28 w-full'>
+      <div className='w-full flex justify-center ml-24'>
+        <section className='flex flex-col justify-center items-center h-full w-full'>
           {components.length > 0 && components[curIdx]}
         </section>
       </div>

@@ -32262,6 +32262,11 @@ video {
           filter: grayscale(0);
 }
 
+.card-text {
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: white;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
